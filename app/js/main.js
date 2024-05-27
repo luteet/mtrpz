@@ -8,19 +8,6 @@ const
 	footer = document.querySelector('.footer');
 
 
-// =-=-=-=-=-=-=-=-=-=- <image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
-
-const imageAspectRatio = document.querySelectorAll('.image-aspect-ratio, figure img');
-imageAspectRatio.forEach(imageAspectRatio => {
-	if(imageAspectRatio.getAttribute('width') && imageAspectRatio.getAttribute('height'))
-		imageAspectRatio.style.setProperty('--aspect-ratio', `${imageAspectRatio.getAttribute("width")}/${imageAspectRatio.getAttribute("height")}`);
-	
-})
-
-// =-=-=-=-=-=-=-=-=-=- </image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
-
-
-
 // =-=-=-=-=-=-=-=-=-=-=-=- <click-events> -=-=-=-=-=-=-=-=-=-=-=-=
 
 body.addEventListener('click', function (event) {
@@ -109,14 +96,3 @@ window.addEventListener('resize', resize)
 charts();
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </charts> -=-=-=-=-=-=-=-=-=-=-=-=
-
-
-/* 
-// =-=-=-=-=-=-=-=-=-=-=-=- <animation> -=-=-=-=-=-=-=-=-=-=-=-=
-
-AOS.init({
-	disable: "mobile",
-});
-
-// =-=-=-=-=-=-=-=-=-=-=-=- </animation> -=-=-=-=-=-=-=-=-=-=-=-=
-*/

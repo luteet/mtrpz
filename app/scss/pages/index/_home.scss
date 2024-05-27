@@ -58,7 +58,6 @@
 	overflow-x: auto;
 
 	.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
-		//left: var(--mobile-container-padding); right: var(--mobile-container-padding);
 		&::before {
 			left: var(--mobile-container-padding); right: var(--mobile-container-padding);
 			background: var(--secondary);
@@ -68,7 +67,7 @@
 	// .main-chart__inner
 
 	&__inner {
-		//padding: 0 2rem;
+
 		padding: 0 0 1rem var(--mobile-container-padding);
 		width: calc(60rem + var(--mobile-container-padding) * 2);
 
@@ -84,6 +83,9 @@
 	&__container {
 		position: relative;
 		width: 960px; aspect-ratio: 960/480;
+
+		background: #272727bf;
+
 		@include _992 {
 			width: 70vw;
 		}
@@ -92,7 +94,6 @@
 			max-width: 1340px;
 		}
 
-		background: #272727bf;
 		canvas {
 			position: absolute;
 			left: 0; top: 0;
@@ -109,6 +110,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 2.5rem 0;
+	
 	@include _550 {
 		gap: 2.5rem;
 	}
