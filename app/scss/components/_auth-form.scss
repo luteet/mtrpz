@@ -19,6 +19,13 @@
 	box-shadow: -0.3125rem 0 0.625rem -0.3125rem #C552D7, 0.3125rem 0 0.625rem -0.3125rem #ADB232,
 	inset 0.3125rem 0 0.625rem -0.3125rem #C552D7, inset -0.3125rem 0 0.625rem -0.3125rem #ADB232;
 
+	transition: opacity .3s;
+
+	&.is-loading {
+		pointer-events: none;
+		opacity: .5;
+	}
+
 	&::before {
 		content: '';
 		position: absolute;

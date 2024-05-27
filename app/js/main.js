@@ -72,24 +72,9 @@ document.querySelectorAll(".auth-form__input").forEach(input => {
 	})
 })
 
-
-function validateEmail(email) {
-
-	let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-
-	if (emailRegex.test(email)) {
-		return true;
-	} else {
-		return false;
-	}
-
-}
-
-
 document.querySelectorAll(".auth-form").forEach(form => {
 	form.addEventListener("submit", (event) => {
-		event.preventDefault();
-		
+		event.preventDefault();	
 	})
 })
 
