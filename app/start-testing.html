@@ -1,0 +1,52 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<section class="full-page">
+			<div class="full-page__background" aria-hidden="true">
+				<div class="full-page__decor">
+					<picture>
+						<source srcset="img/decor-element-4.avif" type="image/avif">
+						<source srcset="img/decor-element-4.webp" type="image/webp">
+						<img src="img/decor-element-4.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<div class="full-page__decor">
+					<picture>
+						<source srcset="img/decor-element-5.avif" type="image/avif">
+						<source srcset="img/decor-element-5.webp" type="image/webp">
+						<img src="img/decor-element-5.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<div class="full-page__decor">
+					<picture>
+						<source srcset="img/decor-element-2.avif" type="image/avif">
+						<source srcset="img/decor-element-2.webp" type="image/webp">
+						<img src="img/decor-element-2.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="full-page__main">
+				<div class="full-page__content">
+					<h1 class="full-page__title main-title">
+						Testing
+					</h1>
+					<div class="full-page__text text">
+						<p>
+							Welcome to our survey of the most appealing style configurations.
+							To start testing, please click the button below.
+						</p>
+					</div>
+					<a href="testing.html" class="full-page__button button is-transparent" aria-label="Start testing">
+						<span aria-hidden="true"></span>
+						<span>
+							Start testing
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html", {
+	"mode": "3",
+})

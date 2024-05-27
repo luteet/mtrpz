@@ -1,0 +1,74 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<section class="full-page">
+			<div class="full-page__background" aria-hidden="true">
+				<div class="full-page__decor">
+					<picture>
+						<source srcset="img/decor-element-4.avif" type="image/avif">
+						<source srcset="img/decor-element-4.webp" type="image/webp">
+						<img src="img/decor-element-4.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<div class="full-page__decor">
+					<picture>
+						<source srcset="img/decor-element-5.avif" type="image/avif">
+						<source srcset="img/decor-element-5.webp" type="image/webp">
+						<img src="img/decor-element-5.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<div class="full-page__decor">
+					<picture>
+						<source srcset="img/decor-element-2.avif" type="image/avif">
+						<source srcset="img/decor-element-2.webp" type="image/webp">
+						<img src="img/decor-element-2.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="full-page__main">
+				<form method="post" action="#" class="full-page__auth auth-form">
+					<h1 class="auth-form__title title">
+						Welcome Back
+					</h1>
+					<label class="auth-form__label">
+						<span><input type="email" name="email" placeholder="Email" required class="auth-form__input"></span>
+						<span>This email is not valid</span>
+					</label>
+					<label class="auth-form__label">
+						<span><input type="password" name="password" placeholder="Password" required class="auth-form__input"></span>
+						<span>Wrong password</span>
+					</label>
+					<label class="auth-form__checkbox">
+						<input type="checkbox" name="remember-me" class="auth-form__checkbox-input">
+						<span class="auth-form__checkbox-element">
+							<svg width="16" height="17">
+								<use href="img/sprites.svg#check"></use>
+							</svg>
+						</span>
+						<span class="auth-form__checkbox-text">
+							Remember me?
+						</span>
+					</label>
+					<button class="auth-form__submit button" type="submit" aria-label="Register">
+						<span aria-hidden="true"></span>
+						<span>
+							Login
+						</span>
+					</button>
+					<div class="auth-form__message text">
+						<p>
+							Something is wrong. Please try registering later.
+						</p>
+					</div>
+					<div class="auth-form__info min-text">
+						Don't have an account?<br>
+						<a href="sign-up.html">Sign up</a>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html", {
+	"mode": "3",
+})

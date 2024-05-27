@@ -1,0 +1,35 @@
+.testing {
+
+	padding-top: 4.6875rem;
+	@include _992 {
+		padding-top: 6.5625rem;
+	}
+
+	// .testing__title
+
+	&__title {
+	}
+
+	// .testing__text
+
+	&__text {
+	}
+
+	// .testing__list
+
+	&__list {
+		padding-top: 4.5625rem;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 4.375rem;
+	}
+
+	// .testing__card
+
+	&__card {
+	}
+}
+
+

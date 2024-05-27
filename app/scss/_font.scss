@@ -1,0 +1,88 @@
+
+@font-face {
+	@include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}
+
+@font-face {
+	@include font-include('Inter', 200, swap, normal, 'Inter-ExtraLight');
+}
+
+@font-face {
+	@include font-include('Inter', 400, swap, normal, 'Inter-Regular');
+}
+
+.main-title {
+	font-family: var(--title-font);
+	font-weight: 600;
+	line-height: 120%;
+	text-align: center;
+
+	font-size: 2.25rem;
+
+	@include _550 {
+		font-size: 3rem;
+	}
+
+	@include _992 {
+		font-size: 4rem;
+	}
+}
+
+.text {
+	text-align: center;
+	font-size: 1rem;
+	line-height: 150%;
+
+	@include _550 {
+		font-size: 1.25rem;
+	}
+}
+
+.min-text {
+	font-size: 1rem;
+	line-height: 150%;
+
+	a {
+		
+		color: var(--accent);
+		text-decoration: underline;
+		text-underline-offset: 0.5ch;
+
+		@media (any-hover: hover) {
+
+			transition: color .15s;
+
+			&:hover {
+				color: var(--accent-hover);
+			}
+		
+			&:active {
+				color: var(--accent-active);
+			}
+		}
+	}
+}
+
+.title {
+	
+	font-family: var(--title-font);
+	font-weight: 700;
+	font-size: 1.25rem;
+	text-align: center;
+
+	@include _550 {
+		font-size: 1.5rem;
+	}
+
+}
+
+.section-title {
+
+	font-family: var(--title-font);
+	font-weight: 700;
+
+}
+
+.txt-center {
+	text-align: center;
+}

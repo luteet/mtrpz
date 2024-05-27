@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#222">
+	<title>MTRPZ</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<nav class="header__nav">
+				<div class="header__nav_body">
+					<ul class="header__nav_list">
+						<li>
+							<a href="index.html" class="is-current" aria-label="Home">
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="start-testing.html" aria-label="Testing">
+								<span>Testing</span>
+							</a>
+						</li>
+						<li>
+							<a href="index.html" aria-label="Results">
+								<span>Results</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="header__nav_auth header__auth">
+						<li>
+							<a href="sign-in.html" class="button is-min is-transparent" aria-label="Sign in">
+								<span aria-hidden="true"></span>
+								<span>
+									Sign in
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="sign-up.html" class="button is-min" aria-label="Sign up">
+								<span aria-hidden="true"></span>
+								<span>
+									Sign up
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<button class="header__burger" type="button" aria-label="Menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</header>
+
+		<main class="main">
+			<div class="main__background" aria-hidden="true">
+				<picture>
+					<source srcset="img/decor-element-1.avif" type="image/avif">
+					<source srcset="img/decor-element-1.webp" type="image/webp">
+					<img src="img/decor-element-1.png" alt="" width="0" height="0" loading="lazy">
+				</picture>
+			</div>
+			<section class="home">
+				<div class="home__decor" aria-hidden="true">
+					<picture>
+						<source srcset="img/decor-element-2.avif" type="image/avif">
+						<source srcset="img/decor-element-2.webp" type="image/webp">
+						<img src="img/decor-element-2.png" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<h1 class="home__title main-title">
+					Analytics of the obtained results
+				</h1>
+				<div class="home__main-chart main-chart" data-simplebar data-simplebar-auto-hide="false">
+					<div class="main-chart__inner">
+						<div class="main-chart__container"></div>
+					</div>
+				</div>
+				<div class="home__add-charts add-charts"></div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__decor mode-1" aria-hidden="true">
+				<div class="footer__decor-blur">
+					<picture>
+						<source srcset="img/footer-decor-element-1-blur.avif" type="image/avif">
+						<source srcset="img/footer-decor-element-1-blur.webp" type="image/webp">
+						<img src="img/footer-decor-element-1-blur.png" alt="" width="0" height="0">
+					</picture>
+				</div>
+				<div class="footer__decor-hero">
+					<img src="img/footer-decor-element-1.svg" width="0" height="0" alt="">
+				</div>
+			</div>
+			<div class="footer__inner container">
+				<div class="footer__copy">© 2024 - МТРПЗ - Privacy</div>
+				<ul class="footer__add-links">
+					<li>
+						<a href="#" aria-label="GitHub">
+							<svg width="98" height="96">
+								<use href="img/sprites.svg#github"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script>
+		const chartData = "js/charts.json";
+	</script>
+	<script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<div class="main__background" aria-hidden="true">
+			<picture>
+				<source srcset="img/decor-element-1.avif" type="image/avif">
+				<source srcset="img/decor-element-1.webp" type="image/webp">
+				<img src="img/decor-element-1.png" alt="" width="0" height="0" loading="lazy">
+			</picture>
+		</div>
+		<section class="home">
+			<div class="home__decor" aria-hidden="true">
+				<picture>
+					<source srcset="img/decor-element-2.avif" type="image/avif">
+					<source srcset="img/decor-element-2.webp" type="image/webp">
+					<img src="img/decor-element-2.png" alt="" width="0" height="0" loading="lazy">
+				</picture>
+			</div>
+			<h1 class="home__title main-title">
+				Analytics of the obtained results
+			</h1>
+			<div class="home__main-chart main-chart" data-simplebar data-simplebar-auto-hide="false">
+				<div class="main-chart__inner">
+					<div class="main-chart__container"></div>
+				</div>
+			</div>
+			<div class="home__add-charts add-charts"></div>
+		</section>
+	</main>
+
+@@include("html/_footer.html", {
+	"mode": "1",
+})

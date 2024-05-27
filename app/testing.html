@@ -1,0 +1,38 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<div class="main__background mode-2" aria-hidden="true">
+			<picture>
+				<source srcset="img/decor-element-3.avif" type="image/avif">
+				<source srcset="img/decor-element-3.webp" type="image/webp">
+				<img src="img/decor-element-3.png" alt="" width="0" height="0" loading="lazy">
+			</picture>
+		</div>
+		<section class="testing">
+			<h1 class="testing__title main-title">
+				Testing
+			</h1>
+			<div class="testing__text text">
+				<p>
+					Choose the most attractive option for you
+				</p>
+			</div>
+			<ul class="testing__list min-container">
+				@@loop("html/_option-card.html", [
+
+					{},
+					{},
+					{},
+
+					{},
+					{},
+					{},
+
+				])
+			</ul>
+		</section>
+	</main>
+
+@@include("html/_footer.html", {
+	"mode": "2",
+})

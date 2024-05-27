@@ -1,0 +1,80 @@
+{
+	"label": "Votes",
+	"groups": [
+		{
+			"name": "Colors",
+			"data": [
+				{
+					"name": "Color 1",
+					"value": "25",
+					"color": "#E1E413"
+				},
+				{
+					"name": "Color 2",
+					"value": "30",
+					"color": "#E1E413"
+				},
+				{
+					"name": "Color 3",
+					"value": "23",
+					"color": "#E1E413"
+				},
+				{
+					"name": "Color 4",
+					"value": "28",
+					"color": "#E1E413"
+				}
+			]
+		},
+		{
+			"name": "Buttons",
+			"data": [
+				{
+					"name": "Button 1",
+					"value": "25",
+					"color": "#B64CC6"
+				},
+				{
+					"name": "Button 2",
+					"value": "22",
+					"color": "#B64CC6"
+				},
+				{
+					"name": "Button 3",
+					"value": "26",
+					"color": "#B64CC6"
+				},
+				{
+					"name": "Button 4",
+					"value": "29",
+					"color": "#B64CC6"
+				}
+			]
+		},
+		{
+			"name": "Prices",
+			"data": [
+				{
+					"name": "Price 1",
+					"value": "27",
+					"color": "#DC2B12"
+				},
+				{
+					"name": "Price 2",
+					"value": "21",
+					"color": "#DC2B12"
+				},
+				{
+					"name": "Price 3",
+					"value": "27",
+					"color": "#DC2B12"
+				},
+				{
+					"name": "Price 4",
+					"value": "19",
+					"color": "#DC2B12"
+				}
+			]
+		}
+	]
+}
