@@ -3,7 +3,10 @@
 	padding-top: 4.6875rem;
 	@include _992 {
 		padding-top: 6.5625rem;
+		
 	}
+
+	padding-left: 0; padding-right: 0;
 
 	// .testing__title
 
@@ -24,7 +27,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 4.375rem;
+		gap: 2rem;
+
+		@media (min-width: 1200px) {
+			gap: 4.375rem;
+		}
 	}
 
 	// .testing__card
